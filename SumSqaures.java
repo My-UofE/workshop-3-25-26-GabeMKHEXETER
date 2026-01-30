@@ -15,9 +15,17 @@ public class SumSqaures { //copied instead from PrintSquares
         int endNum = in.nextInt();
 
         System.out.println("Sequence of squares from " + startNum + " to " + endNum + ":");
-        for (int i = startNum; i < (endNum+1); ++i) {
+
+        //for loop
+        /*for (int i = startNum; i < (endNum+1); ++i) {
             total = total + (i*i);
         }
+        System.out.print(total);*/
+
+        //while loop
+        while (startNum < endNum+1){
+        total = total +(startNum*startNum);
+        ++startNum;}
         System.out.print(total);
     }
 }
