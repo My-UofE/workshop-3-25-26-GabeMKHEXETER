@@ -4,7 +4,7 @@ import java.util.Scanner; // We use the Scanner class from java.util to handle u
 
 public class SumSqaures { //copied instead from PrintSquares
     public static void main(String[] args) {
-        int total = 0;
+        double total = 0; //for averages 
         // Declare Scanner object
         Scanner in = new Scanner(System.in); //works more like python inputs now :D
 
@@ -26,6 +26,8 @@ public class SumSqaures { //copied instead from PrintSquares
         while (startNum < endNum+1){
         total = total +(startNum*startNum);
         ++startNum;}
-        System.out.print(total);
+        System.out.println(total);
+        System.out.println("Average of squares from " + startNum + " to " + endNum + ":"); //not quite (startNum is off but thats ok :] )
+        System.out.println(total/(endNum-1));
     }
 }
